@@ -22,3 +22,8 @@ Zomato Api is used to gather data about the Restaurants.
 1. Getting Started with Apis https://github.com/udacity/ud864/blob/master/Project_Code_4_WindowShoppingPart2.html
 2. Off Canvas - Common Responsive Patterns
 
+## References
+http://learn.knockoutjs.com
+http://www.knockmeout.net/2011/04/utility-functions-in-knockoutjs.html
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+https://developers.zomato.com/ 
