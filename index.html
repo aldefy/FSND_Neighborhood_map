@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="css/default-styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <nav id="drawer" class="dark_blue">
+    <a id="menu">
+    <div align="right">
+      <img class="hamburger" src="img/hamburger.svg" alt="Click Here">
+    </div>
+    </a>
+    <div class="options-box">
+        <h1>RESTAURANTS</h1>
+        <div class="row">
+          <input type="text" data-bind="textInput: search" placeholder="Search by Name">
+        </div>
+        <div><br></div>
+        <div>
+          <input type="text" data-bind="textInput: searching" placeholder="Search by Cusine (Ex. Arabian, Chinese)">
+        </div>
+        <div>
+          <div>
+            <ul data-bind="foreach: markers">
+              <li data-bind="text: title, click: $parent.infoPopup, visible: visible"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="list" id="list">
+          <button data-bind="click: reCenter">Recenter Map</button>
+        </div>
+    </div>
+    </nav>
+
+    <main class="map" id="map"></main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+    <script src="javascript/responsive.js"></script>
+    <script src="javascript/app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv7h5rL8uM2Vh8nAXIZNVIyEcts1__KeM&v=3&callback=initMap&libraries=places" onerror="mapLoadError()"></script>
+  </body>
+</html>
