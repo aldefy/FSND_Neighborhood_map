@@ -15,3 +15,10 @@ The Project is an effort to list a number of Restaurants in Bangalore . The Page
 ## Api Used.
 Google Javascript Maps Api is used to render the Map.
 Zomato Api is used to gather data about the Restaurants.
+
+
+## Attributes for Code Used.
+
+1. Getting Started with Apis https://github.com/udacity/ud864/blob/master/Project_Code_4_WindowShoppingPart2.html
+2. Off Canvas - Common Responsive Patterns
+
